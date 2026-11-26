@@ -7,3 +7,17 @@ body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}.home-page 
 .home-page .hero{background:linear-gradient(180deg,rgba(8,15,16,.40),rgba(8,15,16,.65)),url('fond.jpg') center center/cover no-repeat, #080f10}.home-page .heroContent{ text-shadow:0 2px 12px #080f10}.home-page .hero .tag{color:#eaf4f4}
 
 .rule-cards{margin-top:30px}.rule-card{position:relative;min-height:215px;border-radius:6px}.rule-icon{display:block;font-size:32px;margin-bottom:15px}.rule-card .rule-number{position:absolute;right:24px;top:24px;font-size:20px}.rule-card h3{margin-top:10px}.rule-card p{color:var(--secondary)}
+
+/* Ambient RAW RP motion — shared across all pages */
+main{position:relative;isolation:isolate}
+main::before,main::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+main::before{background:radial-gradient(ellipse at 15% 25%,#3beeea13,transparent 45%),radial-gradient(ellipse at 85% 70%,#3beeea0d,transparent 42%);background-size:140% 140%;animation:raw-ambient 22s ease-in-out infinite alternate}
+main::after{background-image:radial-gradient(circle,#3beeea80 1px,transparent 2px),radial-gradient(circle,#b4c2c255 1px,transparent 2px);background-size:173px 197px,239px 263px;background-position:0 0,65px 80px;opacity:.27;animation:raw-drift 38s linear infinite}
+main>section,main>.page-notice{position:relative;z-index:1}
+.home-page .hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 40%,#3beeea20,transparent 60%);animation:raw-breathe 9s ease-in-out infinite}
+.home-page .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,#3beeea99 1px,transparent 2px),radial-gradient(circle,#b4c2c266 1px,transparent 2px);background-size:173px 197px,239px 263px;opacity:.3;animation:raw-drift 38s linear infinite}
+.home-page .heroContent,.home-page .hud,.home-page .bottomhud{z-index:2}
+@keyframes raw-ambient{from{background-position:0% 0%}to{background-position:100% 100%}}
+@keyframes raw-drift{from{background-position:0 0,65px 80px}to{background-position:173px -197px,304px -183px}}
+@keyframes raw-breathe{0%,100%{opacity:.3}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){main::before,main::after,.home-page .hero::before,.home-page .hero::after{animation:none!important}}
