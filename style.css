@@ -5,3 +5,5 @@
 body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}.home-page .hero{min-height:calc(100svh - 130px)}header{justify-content:flex-start}nav{margin-right:auto}nav a[aria-current=page]{text-decoration:underline;text-underline-offset:7px}.page-notice:empty{display:none}.page-notice{text-align:center;padding:12px}@media(max-width:800px){header{justify-content:space-between}}
 
 .home-page .hero{background:linear-gradient(180deg,rgba(8,15,16,.40),rgba(8,15,16,.65)),url('fond.jpg') center center/cover no-repeat, #080f10}.home-page .heroContent{ text-shadow:0 2px 12px #080f10}.home-page .hero .tag{color:#eaf4f4}
+
+.rule-cards{margin-top:30px}.rule-card{position:relative;min-height:215px;border-radius:6px}.rule-icon{display:block;font-size:32px;margin-bottom:15px}.rule-card .rule-number{position:absolute;right:24px;top:24px;font-size:20px}.rule-card h3{margin-top:10px}.rule-card p{color:var(--secondary)}
