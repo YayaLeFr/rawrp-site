@@ -29,3 +29,7 @@ main.inner-page:has(#reglement,#astuces,#reseaux,#galerie,#divers){background:li
 
 /* Rounded cards across RAW RP */
 main article, main .rule-card, main .tips-card, main .social-card, main figure { border-radius: 16px; }
+
+/* RAW header logo */
+header a.brand { display:inline-flex; align-items:center; width:112px; height:52px; flex-shrink:0; font-size:0; letter-spacing:0; background:url("Logo_sans_fond.png") center/contain no-repeat; }
+header a.brand span { font-size:0; }
