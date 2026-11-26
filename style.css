@@ -33,3 +33,8 @@ main article, main .rule-card, main .tips-card, main .social-card, main figure {
 /* RAW header logo */
 header a.brand { display:inline-flex; align-items:center; width:112px; height:52px; flex-shrink:0; font-size:0; letter-spacing:0; background:url("Logo_sans_fond.png") center/contain no-repeat; }
 header a.brand span { font-size:0; }
+
+/* Ambient GTA police light reflections */
+.home-page .hero::before{background:radial-gradient(ellipse at 0% 60%,rgba(255,25,45,.45),transparent 55%),radial-gradient(ellipse at 100% 60%,rgba(25,95,255,.45),transparent 55%);animation:raw-siren-glow 5s ease-in-out infinite!important;pointer-events:none;z-index:0}
+@keyframes raw-siren-glow{0%,100%{opacity:.28;filter:hue-rotate(0deg)}25%{opacity:.75;filter:hue-rotate(0deg)}50%{opacity:.28;filter:hue-rotate(180deg)}75%{opacity:.75;filter:hue-rotate(180deg)}}
+@media(prefers-reduced-motion:reduce){.home-page .hero::before{animation:none!important;opacity:.25}}
