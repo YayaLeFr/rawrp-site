@@ -21,3 +21,6 @@ main>section,main>.page-notice{position:relative;z-index:1}
 @keyframes raw-drift{from{background-position:0 0,65px 80px}to{background-position:173px -197px,304px -183px}}
 @keyframes raw-breathe{0%,100%{opacity:.3}50%{opacity:1}}
 @media(prefers-reduced-motion:reduce){main::before,main::after,.home-page .hero::before,.home-page .hero::after{animation:none!important}}
+
+/* Shared city skyline on Regulation, Tips, Networks, Gallery and Divers */
+main.inner-page:has(#reglement,#astuces,#reseaux,#galerie,#divers){background:radial-gradient(ellipse at right,#12303c66,transparent 55%),linear-gradient(0deg,#080f10aa,#080f10 85%),url('city.svg') bottom center/100% auto no-repeat;}
