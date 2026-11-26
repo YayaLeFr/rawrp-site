@@ -26,3 +26,6 @@ main>section,main>.page-notice{position:relative;z-index:1}
 main.inner-page:has(#reglement,#astuces,#reseaux,#galerie,#divers){background:radial-gradient(ellipse at right,#12303c66,transparent 55%),linear-gradient(0deg,#080f10aa,#080f10 85%),url('city.svg') bottom center/100% auto no-repeat;}
 
 main.inner-page:has(#reglement,#astuces,#reseaux,#galerie,#divers){background:linear-gradient(180deg,#080f10 0%,#080f1033 75%),url('ville-turquoise.svg') center bottom/cover no-repeat fixed;}
+
+/* Rounded cards across RAW RP */
+main article, main .rule-card, main .tips-card, main .social-card, main figure { border-radius: 16px; }
